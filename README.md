@@ -64,62 +64,27 @@ You can explore the implementation of each component of the Transformer model by
 
 ### Self-Attention
 
-Self-attention allows the model to weigh the importance of different words in a sentence when encoding a word. This mechanism is implemented in
-
-[01-self_attention.ipynb](/01-self_attention.ipynb)
-
-.
+Self-attention allows the model to weigh the importance of different words in a sentence when encoding a word. This mechanism is implemented in [01-self_attention.ipynb](/01-self_attention.ipynb).
 
 ### Multi-Head Attention
 
-Multi-head attention extends the self-attention mechanism by allowing the model to jointly attend to information from different representation subspaces. This is implemented in
-
-[02-multi_head_attention.ipynb](/02-multi_head_attention.ipynb)
-
-and the `MultiHeadAttention` class in
-
-decoder.py
-.
+Multi-head attention extends the self-attention mechanism by allowing the model to jointly attend to information from different representation subspaces. This is implemented in [02-multi_head_attention.ipynb](/02-multi_head_attention.ipynb) and the `MultiHeadAttention` class in `decoder.py`.
 
 ### Positional Encoding
 
-Since the Transformer model does not inherently understand the order of words, positional encoding is used to inject information about the relative or absolute position of tokens in the sequence. This is covered in
-
-[03-posional_encoding.ipynb](/03-posional_encoding.ipynb)
-
-.
+Since the Transformer model does not inherently understand the order of words, positional encoding is used to inject information about the relative or absolute position of tokens in the sequence. This is covered in [03-posional_encoding.ipynb](/03-posional_encoding.ipynb).
 
 ### Layer Normalization
 
-Layer normalization is used to stabilize and accelerate the training of deep neural networks. This is explained in
-
-[04-layer_normalization.ipynb](/04-layer_normalization.ipynb)
-
-.
+Layer normalization is used to stabilize and accelerate the training of deep neural networks. This is explained in[04-layer_normalization.ipynb](/04-layer_normalization.ipynb).
 
 ### Transformer Encoder
 
-The Transformer encoder consists of a stack of identical layers, each containing a multi-head self-attention mechanism and a position-wise fully connected feed-forward network. This is implemented in
-
-05-transformer-encoder.ipynb
-
- and the `Encoder` class in
-
-[encoder.py](/encoder.py)
-
-.
+The Transformer encoder consists of a stack of identical layers, each containing a multi-head self-attention mechanism and a position-wise fully connected feed-forward network. This is implemented in [05-transformer-encoder.ipynb](/05-transformer-encoder.ipynb) and the `Encoder` class in [encoder.py](/encoder.py).
 
 ### Transformer Decoder
 
-The Transformer decoder is similar to the encoder but includes an additional multi-head attention mechanism to attend to the encoder's output. This is implemented in
-
-06-transformer-decoder.ipynb
-
- and the `Decoder` class in
-
-[decoder.py](/decoder.py)
-
-.
+The Transformer decoder is similar to the encoder but includes an additional multi-head attention mechanism to attend to the encoder's output. This is implemented in [06-transformer-decoder.ipynb](/06-transformer-decoder.ipynb) and the `Decoder` class in [decoder.py](/decoder.py).
 
 ## References
 
