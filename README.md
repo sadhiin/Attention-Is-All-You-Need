@@ -5,18 +5,18 @@ This repository contains a comprehensive implementation of the Transformer archi
 
 ## Table of Contents
 
-- Introduction
+- [Introduction](#introduction)
 - [Repository Structure](#repository-structure)
-- Installation
-- Usage
-- Components
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
   - [Self-Attention](#self-attention)
   - [Multi-Head Attention](#multi-head-attention)
   - [Positional Encoding](#positional-encoding)
   - [Layer Normalization](#layer-normalization)
   - [Transformer Encoder](#transformer-encoder)
   - [Transformer Decoder](#transformer-decoder)
-- References
+- [References](#references)
 
 ## Introduction
 
