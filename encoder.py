@@ -37,7 +37,7 @@ class MultiHeadAttention(nn.Module):
         # attention = # 32 x 8 x 200 x 64
         # values = # 32 x 8 x 200 x 64
         values, attention = scaled_dot_product_attention(Q, K, V, mask)
-        values = values.reshape(batch_size, sequence_length, self.d_model * self.num_heads)     # 32 x 200 x 512
+        values = values.permute(0, 2, 1, 3)..reshape(batch_size, sequence_length, self.d_model * self.num_heads)     # 32 x 200 x 512
 
         out = self.fc(values)   # 32 x 200 x 512
         return out
